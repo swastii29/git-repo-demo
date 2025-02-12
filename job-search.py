@@ -1,10 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+from selenium.webdriver.edge.options import Options
 
-browser = webdriver.Edge()
+options = Options()
+options.add_argument("--headless=new")
 
-jobList = ["QA", "PHP", "Java", "Python"]
+browser = webdriver.Edge(options = options)
+
+
+jobList = ["QA","Java","PHP"]
+
+
+myString = ""
 
 for job in jobList:
     print(job)
@@ -16,11 +24,21 @@ for job in jobList:
     # Find all <a> elements with href attributes
     links = browser.find_elements(By.TAG_NAME, 'h1')
 
+    myString +=job+"\n"
+
     # Loop through each link and print the title attribute
     for link in links:
         print(link.text)
+        myString += link.text
+        myString += "\n"
+    myString += "\n"
 
-    time.sleep(3)
+time.sleep(3)
+print(myString)
+
+file= open ('test.txt', 'w')
+file.write(myString)
+file.close()
 
 time.sleep(5)
 browser.quit()
