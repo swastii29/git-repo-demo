@@ -8,10 +8,7 @@ options.add_argument("--headless=new")
 
 browser = webdriver.Edge(options = options)
 
-
-jobList = ["QA","Java","PHP"]
-
-
+jobList = ["QA", "PHP", "Java", "Python"]
 myString = ""
 
 for job in jobList:
