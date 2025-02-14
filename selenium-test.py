@@ -3,13 +3,22 @@ from selenium.webdriver.common.by import By
 import time
 
 browser = webdriver.Edge()
-browser.get('https://bing.com')
+collegeList = ["top college in biratnagar","top college in kathmandu","top college in Dharan"]
+myString = ""
 
-time.sleep(5)
+for college in collegeList:
+    print(college)
+    browser.get('https://bing.com')
+    searchBar = browser.find_element(By.ID, 'sb_form_q')
+    searchBar.send_keys('Colleges in Nepal')
+    searchBar.submit()
+    links = browser . find_element(By.TAG_NAME, 'h1')
 
-searchBar = browser.find_element(By.ID, 'sb_form_q')
-searchBar.send_keys('Himalaya Darshan College')
-searchBar.submit()
+time.sleep(3)
+print(myString)
+file = open('test.txt', 'w')
+file.write(myString)
+file.close()
 
 time.sleep(5)
 browser.quit()

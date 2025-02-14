@@ -5,8 +5,6 @@ Software Engineer - QA
 Senior QA Engineers
 QA Engineer
 
-<<<<<<< HEAD
-=======
 PHP
 Showing 1 - 5 job of 5
 Full Stack Developer
@@ -15,7 +13,6 @@ PHP Laravel Developer
 WordPress / PHP Developer (Juni…
 Wordpress Developer
 
->>>>>>> 2775c2cedcd89e251d8c43ef79b551d2b1f3df05
 Java
 Showing 1 - 6 job of 19
 WordPress Developer
@@ -25,15 +22,6 @@ Full Stack Developer
 NodeJS Developer
 Full Stack Developer
 
-<<<<<<< HEAD
-PHP
-Showing 1 - 5 job of 5
-Full Stack Developer
-Senior PHP Developer
-PHP Laravel Developer
-WordPress / PHP Developer (Juni…
-Wordpress Developer
-=======
 Python
 Showing 1 - 6 job of 10
 Machine Learning Engineer
@@ -42,5 +30,4 @@ Site Reliability Engineers (SRE)
 Senior Software Development Eng…
 ML Python Developer
 Junior Backend Developer (Pytho…
->>>>>>> 2775c2cedcd89e251d8c43ef79b551d2b1f3df05
 
